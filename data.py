@@ -1,10 +1,4 @@
-from flask import Flask
-
-app = Flask(__name__)
-print(__name__)
-
-
-udemy_data = [
+[
   {
     'Day 1': {
       'main_heading': ' Working with Variables in Python to Manage Data',
@@ -1385,14 +1379,3 @@ udemy_data = [
     }
   }
 ]
-
-@app.route("/python100days")
-def say_bye():
-    return udemy_data
-
-
-if __name__== "__main__":
-    # This requires stopping and starting the server for changes to take effect
-    # app.run()
-    # instead run with debug on
-    app.run(debug=True)
